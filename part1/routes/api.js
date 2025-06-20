@@ -30,4 +30,8 @@ router.get('walkrequests/open', async (req, res) => {
     }
 });
 
-router.get('/walkers/summary', as)
+router.get('/walkers/summary', async (req, res) => {
+    try {
+        const [rows]
+    }
+})
