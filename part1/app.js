@@ -1,11 +1,20 @@
-const express = require('express');
-const app = express();
-const apiRouter = require('./routes/api');
+var express = require('express');
+var path = require('path');
+var cookieParser = require('cookie-parser');
+var logger = require('morgan');
 
+var indexRouter = require('./routes/index');
+var usersRouter = require('./routes/users');
+
+var app = express();
+
+app.use(logger('dev'));
 app.use(express.json());
-app.use('/api', apiRouter);
+app.use(express.urlencoded({ extended: false }));
+app.use(cookieParser());
+app.use(express.static(path.join(__dirname, 'public')));
 
-const PORT = 8080;
-app.listen(PORT, () => {
-    console.log(`Server is running at http://localhost:${PORT}`);
-});
+app.use('/', indexRouter);
+app.use('/users', usersRouter);
+
+module.exports = app;
