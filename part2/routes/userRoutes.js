@@ -72,6 +72,11 @@ router.post('/login', async (req, res) => {
     return res.status(403).json({ error: 'Unauthorized' });
   }
 
+  try {
+    const [rows] = await db.query(`
+      `)
+  }
+
 
  router.get('/logout', (req, res) => {
   req.session.destroy(() => {
