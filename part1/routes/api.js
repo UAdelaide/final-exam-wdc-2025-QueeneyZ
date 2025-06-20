@@ -45,6 +45,8 @@ router.get('/walkers/summary', async (req, res) => {
         `);
         res.json(rows);
     } catch (err) {
-        res.status(500).json({ error: 'DB error', detail:})
+        res.status(500).json({ error: 'DB error', detail: err.message });
     }
-})
+});
+
+module.
