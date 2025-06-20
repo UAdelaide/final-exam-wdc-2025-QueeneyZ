@@ -68,8 +68,10 @@ router.post('/login', async (req, res) => {
 
  router.get('/mydogs', async (req, res) => {
   if (!req.session.user) {
-    return res.status
+    return res.status(401).json({ error: 'Not logged in' });
   }
+
+  
  })
 
 
