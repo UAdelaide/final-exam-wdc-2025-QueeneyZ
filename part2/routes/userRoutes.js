@@ -58,10 +58,11 @@ router.post('/login', async (req, res) => {
     if (rows[0].role === 'walker') {
       return res.redirect('/walker-dashboard.html');
     }
-      return res.status(403).send('Unknown user role');
-    }
+
+    return res.status(403).send('Unknown user role');
+
   } catch (error) {
-    res.status(500).send('Login failed');
+    return res.status(500).send('Login failed');
   }
  });
 
