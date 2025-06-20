@@ -2,4 +2,4 @@ const express = require('express');
 const router = express.Router();
 const db = require('../models/db');
 
-router
+router.get('/dogs', async (requestAnimationFrame, res) =>)
