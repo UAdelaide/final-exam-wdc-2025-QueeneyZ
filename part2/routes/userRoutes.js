@@ -59,7 +59,8 @@ router.post('/login', async (req, res) => {
       return res.status(403).send('Unknown user role');
     }
   } catch (error) {
-    res.status(500)
+    res.status(500).send('Login failed');
   }
+});
 
 module.exports = router;
