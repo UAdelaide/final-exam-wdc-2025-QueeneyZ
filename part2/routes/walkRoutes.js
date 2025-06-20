@@ -61,7 +61,7 @@ router.post('/:id/apply', async (req, res) => {
 
 router.get('/owner', async (req, res) => {
   const currentUser = req.session.user;
-  if (!currentUser || current.session.user})
+  if (!currentUser || currentUser.role !== 'owner')
 })
 
 module.exports = router;
