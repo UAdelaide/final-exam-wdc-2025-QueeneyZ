@@ -65,6 +65,8 @@ router.post('/login', async (req, res) => {
     return res.status(500).send('Login failed');
   }
  });
+ console.log('Attempted login:', username, password);
+
 
  router.get('/logout', (req, res) => {
   req.session.destroy(() => {
