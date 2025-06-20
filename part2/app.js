@@ -5,7 +5,10 @@ require('dotenv').config();
 
 const app = express();
 
-app.
+app.use(session({
+    secret: 'mydogsecret',
+    
+}))
 
 // Middleware
 app.use(express.json());
