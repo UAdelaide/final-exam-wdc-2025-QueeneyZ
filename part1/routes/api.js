@@ -32,6 +32,7 @@ router.get('walkrequests/open', async (req, res) => {
 
 router.get('/walkers/summary', async (req, res) => {
     try {
-        const [rows]
+        const [rows] = await db.execute(`
+            SELECT u.`)
     }
 })
