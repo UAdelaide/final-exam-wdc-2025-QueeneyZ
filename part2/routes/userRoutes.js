@@ -77,7 +77,9 @@ router.post('/login', async (req, res) => {
       SELECT dog_id, name
       FROM Dogs
       WHERE owner_id = ?
-      `, [currentUser])
+      `, [currentUser.user_id]);
+
+      res.json(rows);
   }
 
 
