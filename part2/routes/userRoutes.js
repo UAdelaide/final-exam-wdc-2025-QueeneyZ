@@ -54,7 +54,9 @@ router.post('/login', async (req, res) => {
     if (rows[0].role === 'owner') {
       return res.redirect('/owner-dashboard.html');
     } else if (rows[0].role === 'walker') {
-      return res.redirect()
+      return res.redirect('/walker-dashboard.html');
+    } else {
+      return res
     }
 
 module.exports = router;
