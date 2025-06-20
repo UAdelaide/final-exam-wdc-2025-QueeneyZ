@@ -76,7 +76,7 @@ router.post('/login', async (req, res) => {
       'SELECT dog_id, name, size FROM Dogs WHERE owner_id = ?',
       [req.session.user.user_id]
     );
-    res.json(rows);
+    res.json(dogs);
   } catch (err) {
     res.status(500).json({ error: 'Failed to fetch your dogs' });
   }
