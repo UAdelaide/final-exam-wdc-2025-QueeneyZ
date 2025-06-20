@@ -102,7 +102,7 @@ VALUES
 ),
 (
     (SELECT dog_id FROM Dogs WHERE name = 'Rocky'),
-    '2025-06-11 11:30:00',
+    '2025-06-12 09:00:00',
     30,
     'Central Market',
     'accpeted'
