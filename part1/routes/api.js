@@ -43,5 +43,8 @@ router.get('/walkers/summary', async (req, res) => {
             WHERE u.role = 'walker'
             GROUP BY u.username
         `);
+        res.json(rows);
+    } catch (err) {
+        res.status()
     }
 })
