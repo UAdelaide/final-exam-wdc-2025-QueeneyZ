@@ -61,6 +61,6 @@ router.post('/login', async (req, res) => {
   } catch (error) {
     res.status(500).send('Login failed');
   }
-});
+ });
 
 module.exports = router;
