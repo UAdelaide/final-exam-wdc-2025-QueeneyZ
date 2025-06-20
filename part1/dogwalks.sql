@@ -69,3 +69,4 @@ VALUES
 ((SELECT user_id FROM Users WHERE username = 'david789'), 'Charlie', 'large'),
 ((SELECT user_id FROM Users WHERE username = 'bobwalker'), 'Lucy', 'medium'),
 ((SELECT user_id FROM Users WHERE username = 'chloe456'), 'Rocky', 'small');
+
