@@ -98,7 +98,7 @@ CREATE TABLE WalkRatings (
 --     '2025-06-11 11:30:00',
 --     30,
 --     'Central Market',
---     'accpeted'
+--     'accepted'
 -- ),
 -- (
 --     (SELECT dog_id FROM Dogs WHERE name = 'Rocky'),
