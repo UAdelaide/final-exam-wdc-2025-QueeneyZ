@@ -81,7 +81,8 @@ router.post('/login', async (req, res) => {
 
       res.json(rows);
   } catch (error) {
-    console.error('SQL Error:')
+    console.error('SQL Error:', error);
+    res.status(500).json({ error: ''})
   }
 
 
