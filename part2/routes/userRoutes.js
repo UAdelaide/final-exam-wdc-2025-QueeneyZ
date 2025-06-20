@@ -82,9 +82,9 @@ router.post('/login', async (req, res) => {
       res.json(rows);
   } catch (error) {
     console.error('SQL Error:', error);
-    res.status(500).json({ error: ''})
+    res.status(500).json({ error: 'Failed to fetch dog list' });
   }
-
+ });
 
  router.get('/logout', (req, res) => {
   req.session.destroy(() => {
