@@ -77,6 +77,8 @@ router.post('/login', async (req, res) => {
       [req.session.user.user_id]
     );
     res.json(rows);
+  } catch (err) {
+    res.status(500).json({ error:})
   }
  })
 
