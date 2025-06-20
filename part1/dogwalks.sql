@@ -78,4 +78,11 @@ VALUES
     30,
     'Parklands',
     'open'
-)
+),
+(
+    (SELECT dog_id FROM Dogs WHERE name = 'Bella'),
+    '2025-06-10 09:00:00',
+    30,
+    'Parklands',
+    'open'
+),
