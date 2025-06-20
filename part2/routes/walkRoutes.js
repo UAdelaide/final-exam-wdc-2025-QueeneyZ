@@ -72,6 +72,10 @@ router.get('/owner', async (req, res) => {
       JOIN Dogs d ON wr.dog_id = d.dog_id
       WHERE d.owner_id = ?
       `, [currentUser.user_id]);
+
+      res.json(rows);
+  } catch (error) {
+    
   }
 })
 
