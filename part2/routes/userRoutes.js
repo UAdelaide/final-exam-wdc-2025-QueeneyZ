@@ -68,21 +68,7 @@ router.post('/login', async (req, res) => {
 
  router.get('/mydogs', async (req, res) => {
   const currentUser = req.session.user;
-  if (!req.session.user) {
-    return res.status(401).json({ error: 'Not logged in' });
-  }
-
-  try {
-    const [dogs] = await db.query(
-      'SELECT dog_id, name, size FROM Dogs WHERE owner_id = ?',
-      [req.session.user.user_id]
-    );
-    res.json(dogs);
-  } catch (err) {
-    res.status(500).json({ error: 'Failed to fetch your dogs' });
-  }
- });
-
+  if (!currentUser || )
 
 
  router.get('/logout', (req, res) => {
