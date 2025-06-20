@@ -49,4 +49,4 @@ router.get('/walkers/summary', async (req, res) => {
     }
 });
 
-module.
+module.exports = router;
