@@ -57,7 +57,10 @@
 
         async function loadDogsWithPhotos() {
           try {
-            const res = await fetch('/api/dogs')
+            const res = await fetch('/api/dogs');
+            const dogList = await res.json();
+
+            for 
           }
         }
       }
