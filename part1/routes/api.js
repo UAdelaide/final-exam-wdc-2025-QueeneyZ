@@ -25,5 +25,7 @@ router.get('walkrequests/open', async (req, res) => {
             WHERE WalkRequests.status = 'open
             `);
             res.json(rows);
+    } catch (err) {
+        res.status(500).json({})
     }
 })
