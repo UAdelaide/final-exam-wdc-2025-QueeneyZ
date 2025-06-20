@@ -63,9 +63,12 @@
             for (const dog of dogList) {
               const photoRes = await fetch('https://dog.ceo/api/breeds/image/random');
               const photoData = await photoRes.json();
-              dog.image = photoData.message
+              dog.image = photoData.message;
             }
-          }
+
+            dogs.balue = dogList;
+
+          } catch (err)
         }
       }
       data() {
