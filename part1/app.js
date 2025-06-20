@@ -3,4 +3,6 @@ const app = express();
 const apiRouter = require('./routes/api');
 
 app.use(express.json());
-app.use()
+app.use('/api', apiRouter);
+
+const PORT = 8080
