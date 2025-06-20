@@ -73,7 +73,8 @@ router.post('/login', async (req, res) => {
 
   try {
     const [rows] = await db.query(
-      'SELECT'
+      'SELECT dog_id, name FROM Dogs WHERE owner_id = ?',
+      
     )
   }
  })
