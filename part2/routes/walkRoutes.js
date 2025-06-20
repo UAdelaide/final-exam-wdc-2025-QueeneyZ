@@ -75,8 +75,8 @@ router.get('/owner', async (req, res) => {
 
       res.json(rows);
   } catch (error) {
-    res.status(500).json({ error})
+    res.status(500).json({ error: 'Failed to fetch owner walk requests' });
   }
-})
+});
 
 module.exports = router;
