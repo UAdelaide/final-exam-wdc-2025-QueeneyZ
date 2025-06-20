@@ -70,3 +70,4 @@ VALUES
 ((SELECT user_id FROM Users WHERE username = 'bobwalker'), 'Lucy', 'medium'),
 ((SELECT user_id FROM Users WHERE username = 'chloe456'), 'Rocky', 'small');
 
+INSERT INTO WalkRequests (dog_id)
