@@ -18,6 +18,6 @@ router.get('walkrequests/open', async (req, res) => {
     try {
         const [rows] = await db.execute(`
             SELECT WalkRequests.request_id, Dogs.name AS dog_name, WalkRequests.request_time,
-                   WalkRequest`)
+                   WalkRequests.duration_minutes`)
     }
 })
