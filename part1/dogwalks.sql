@@ -102,8 +102,8 @@ VALUES
 ),
 (
     (SELECT dog_id FROM Dogs WHERE name = 'Rocky'),
-    '2025-06-12 09:00:00',
-    40,
-    'North Terrace',
-    'open'
-);
+    '2025-06-12 11:00:00',
+    30,
+    'Central Market',
+    'accpeted'
+),
