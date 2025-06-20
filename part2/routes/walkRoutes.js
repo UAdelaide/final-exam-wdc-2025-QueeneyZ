@@ -61,7 +61,9 @@ router.post('/:id/apply', async (req, res) => {
 
 router.get('/owner', async (req, res) => {
   const currentUser = req.session.user;
-  if (!currentUser || currentUser.role !== 'owner')
+  if (!currentUser || currentUser.role !== 'owner') {
+    return res.status(403).json({ error: 'Unauth'})
+  }
 })
 
 module.exports = router;
