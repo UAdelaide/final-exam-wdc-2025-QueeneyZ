@@ -68,7 +68,9 @@ router.post('/login', async (req, res) => {
 
  router.get('/mydogs', async (req, res) => {
   const currentUser = req.session.user;
-  if (!currentUser || )
+  if (!currentUser || currentUser.role !== 'owner') {
+    return res.status(403)
+  }
 
 
  router.get('/logout', (req, res) => {
