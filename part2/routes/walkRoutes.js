@@ -59,6 +59,8 @@ router.post('/:id/apply', async (req, res) => {
   }
 });
 
-router.get('/owner', async)
+router.get('/owner', async (req, res) => {
+  const currentUser 
+})
 
 module.exports = router;
