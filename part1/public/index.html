@@ -84,6 +84,9 @@
                     const data = await res.json();
                     this.dogUrl = data.message;
                 }
+            },
+            mounted() {
+                this.getDog()
             }
         })
     </script>
