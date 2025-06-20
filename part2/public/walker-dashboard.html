@@ -89,7 +89,8 @@
         onMounted(async () => {
           try {
             const current = await getCurrentUser();
-            user.value = current.user
+            user.value = current.user_id;
+            await loadWalkRequests();
           }
           loadWalkRequests();
         });
