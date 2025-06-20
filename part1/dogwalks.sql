@@ -105,5 +105,5 @@ CREATE TABLE WalkRatings (
 --     '2025-06-12 11:00:00',
 --     30,
 --     'Central Market',
---     'accpeted'
+--     'accepted'
 -- ),
