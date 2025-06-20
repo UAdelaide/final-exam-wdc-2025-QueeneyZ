@@ -66,7 +66,11 @@ router.post('/login', async (req, res) => {
   }
  });
 
- router.get('/mydogs', async (req, res))
+ router.get('/mydogs', async (req, res) => {
+  if (!req.session.user) {
+    return res.status
+  }
+ })
 
 
 
