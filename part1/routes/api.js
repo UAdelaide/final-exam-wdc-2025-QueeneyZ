@@ -5,6 +5,7 @@ const db = require('../models/db');
 router.get('/dogs', async (req, res) => {
     try {
         const [rows] = await db.execute(`
-            SELECT Dogs.name AS dog_name, Dogs.size`)
+            SELECT Dogs.name AS dog_name, Dogs.size, Users.username AS owner_username
+            FROM `)
     }
 })
