@@ -59,4 +59,6 @@ router.post('/:id/apply', async (req, res) => {
   }
 });
 
+router.get('/owner', async)
+
 module.exports = router;
