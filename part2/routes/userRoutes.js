@@ -80,6 +80,8 @@ router.post('/login', async (req, res) => {
       `, [currentUser.user_id]);
 
       res.json(rows);
+  } catch (error) {
+    console.error('SQL Error:')
   }
 
 
