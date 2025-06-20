@@ -10,6 +10,8 @@ router.get('/dogs', async (req, res) => {
             `);
             res.json(rows);
     } catch (err) {
-        res.status(500).json({ error: 'DB error', detail: err.message})
+        res.status(500).json({ error: 'DB error', detail: err.message });
     }
-})
+});
+
+router.get('walk')
