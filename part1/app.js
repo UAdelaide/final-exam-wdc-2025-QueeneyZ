@@ -7,5 +7,5 @@ app.use('/api', apiRouter);
 
 const PORT = 8080;
 app.listen(PORT, () => {
-    console.log()
+    console.log(`Server is running at http://localhost:$`)
 })
