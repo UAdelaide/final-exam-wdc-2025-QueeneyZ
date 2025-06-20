@@ -91,6 +91,8 @@
             const current = await getCurrentUser();
             user.value = current.user_id;
             await loadWalkRequests();
+          } catch (err) {
+            error.value = err.message;
           }
           loadWalkRequests();
         });
