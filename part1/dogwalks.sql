@@ -106,4 +106,4 @@ VALUES
     40,
     'North Terrace',
     'open'
-),
+);
