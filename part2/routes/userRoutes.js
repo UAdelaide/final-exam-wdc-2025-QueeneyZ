@@ -52,7 +52,7 @@ router.post('/login', async (req, res) => {
     req.session.user = rows[0];
 
     if (rows[0].role === 'owner') {
-      
+      return res.redirect('/owner-dashboard.html')
     }
 
 module.exports = router;
