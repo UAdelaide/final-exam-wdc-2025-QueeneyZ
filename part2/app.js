@@ -13,7 +13,7 @@ app.use(session({
 
 // Middleware
 app.use(express.json());
-app.use(express.ur;
+app.use(express.urlencoded({ extended: false }));
 app.use(express.static(path.join(__dirname, '/public')));
 
 // Routes
