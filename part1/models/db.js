@@ -7,4 +7,4 @@ const pool = mysql.createPool({
     database: 'DogWalkService'
 });
 
-MediaSourceHandle.
+Module.exports = pool;
