@@ -5,4 +5,7 @@ const apiRouter = require('./routes/api');
 app.use(express.json());
 app.use('/api', apiRouter);
 
-const PORT = 8080
+const PORT = 8080;
+app.listen(PORT, () => {
+    console.log()
+})
