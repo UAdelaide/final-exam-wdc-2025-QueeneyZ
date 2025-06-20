@@ -94,13 +94,14 @@
           } catch (err) {
             error.value = err.message;
           }
-          loadWalkRequests();
+
         });
 
         return {
           walks,
           message,
           error,
+          user,
           applyToWalk
         };
       }
