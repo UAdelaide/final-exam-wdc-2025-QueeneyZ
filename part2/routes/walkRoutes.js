@@ -66,7 +66,8 @@ router.get('/owner', async (req, res) => {
   }
 
   try {
-    const [rows]
+    const [rows] = await db.query(`
+      SELECT wr.*, `)
   }
 })
 
