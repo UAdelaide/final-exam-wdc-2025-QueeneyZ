@@ -91,5 +91,12 @@ VALUES
     '2025-06-11 10:00:00',
     60,
     'Glenlg Beach',
-    'accepted'
+    'open'
+),
+(
+    (SELECT dog_id FROM Dogs WHERE name = 'Lucy'),
+    '2025-06-11 10:00:00',
+    60,
+    'Glenlg Beach',
+    'open'
 ),
