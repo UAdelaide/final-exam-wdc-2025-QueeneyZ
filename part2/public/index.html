@@ -68,7 +68,9 @@
 
             dogs.balue = dogList;
 
-          } catch (err)
+          } catch (err) {
+            console.error('Failed to load dog data:', err);
+          }
         }
       }
       data() {
