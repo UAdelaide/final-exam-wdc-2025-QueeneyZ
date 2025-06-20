@@ -28,4 +28,6 @@ router.get('walkrequests/open', async (req, res) => {
     } catch (err) {
         res.status(500).json({ error: 'DB error', detail: err.message });
     }
-})
+});
+
+router.get('/walkers/summary', as)
