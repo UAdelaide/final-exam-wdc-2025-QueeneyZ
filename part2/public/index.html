@@ -73,11 +73,13 @@
           }
         }
 
-        onMounted(())
-      }
-      data() {
+        onMounted(() => {
+          loadDogsWithPhotos();
+        });
+
         return {
-          message: 'Welcome to the Dog Walking Service!'
+          message,
+          
         };
       }
     }).mount('#app');
