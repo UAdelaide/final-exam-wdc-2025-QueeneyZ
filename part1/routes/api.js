@@ -20,6 +20,6 @@ router.get('walkrequests/open', async (req, res) => {
             SELECT WalkRequests.request_id, Dogs.name AS dog_name, WalkRequests.request_time,
                    WalkRequests.duration_minutes, WalkRequests.location, Users.username AS owner_username
             FROM WalkRequests
-            `)
+            JOIN Dogs ON WalkRequests.dog_id = `)
     }
 })
