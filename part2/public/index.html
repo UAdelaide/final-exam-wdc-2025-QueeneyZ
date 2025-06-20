@@ -55,7 +55,11 @@
         const message = ref('Welcome to the Dog Walking Service!');
         const dogs = ref([]);
 
-        async function loadDogsWithPhotos()
+        async function loadDogsWithPhotos() {
+          try {
+            const res = await fetch('/api/dogs')
+          }
+        }
       }
       data() {
         return {
