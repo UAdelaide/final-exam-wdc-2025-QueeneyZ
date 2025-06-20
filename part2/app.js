@@ -7,7 +7,8 @@ const app = express();
 
 app.use(session({
     secret: 'mydogsecret',
-    
+    resave: false,
+    saveUninitialized: true
 }))
 
 // Middleware
